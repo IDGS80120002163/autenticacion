@@ -1,0 +1,23 @@
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  mat-card {
+    max-width: 600px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  mat-card img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .custom-login-button {
+    color: green;
+  }
+  
