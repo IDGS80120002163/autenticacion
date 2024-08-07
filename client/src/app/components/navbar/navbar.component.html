@@ -35,6 +35,12 @@
                             </mat-icon>
                             <span>Salir</span>
                         </button>
+                        <button [routerLink]="['/change-password']" mat-menu-item>
+                            <mat-icon>
+                                password
+                            </mat-icon>
+                            <span>Cambiar contraseña</span>
+                        </button>
                     </mat-menu>
                     <a *ngIf="userDetail?.roles.includes('Admin')" mat-button routerLink="/users">
                         <mat-icon>

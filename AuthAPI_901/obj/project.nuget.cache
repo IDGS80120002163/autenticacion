@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uzh14kN9uqr62noCQhRK7AaKItg9Jd2ax3ekzvmrqzMBBIW9eOHp2Rnx4OUf4WM0UiKXkHacwUIjc7RZ1GNqig==",
+  "dgSpecHash": "20UYtykbeb/7QLBjN/aprqTJ/0Rwsqc3QdOLX+SBq4fhLm0pXc+N9AveHiCICEU6/tSTFlsIHlzOYMUMTYVsZQ==",
   "success": true,
   "projectFilePath": "D:\\Proyectos.NET\\AuthAPI_901\\AuthAPI_901\\AuthAPI_901.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,7 @@
     "C:\\Users\\david\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\restsharp\\111.4.1\\restsharp.111.4.1.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

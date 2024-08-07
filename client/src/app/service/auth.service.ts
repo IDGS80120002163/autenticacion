@@ -8,6 +8,8 @@ import { AuthResponse } from '../interfaces/auth-response';
 import { jwtDecode } from 'jwt-decode';
 import { RegisterRequest } from '../interfaces/register-request';
 import { UserDetail } from '../interfaces/user-details';
+import { ResetPasswordRequest } from '../interfaces/reset-password-request';
+import { ChangePasswordRequest } from '../interfaces/change-password';
 
 @Injectable({
   providedIn: 'root'
@@ -47,6 +49,17 @@ export class AuthService {
   getDetail(): Observable<UserDetail> {
     return this._http.get<UserDetail>(`${this.apiUrl}/Account/detail`);
   }
+
+  forgotPassword = (email: string): Observable<AuthResponse> =>
+    this._http.post<AuthResponse>(`${this.apiUrl}/Account/forgot-password`, {
+      email,
+    });
+
+  resetPassword = (data: ResetPasswordRequest): Observable<AuthResponse> =>
+    this._http.post<AuthResponse>(`${this.apiUrl}/Account/reset-password`, data);
+
+  changePassword = (data: ChangePasswordRequest): Observable<AuthResponse> =>
+    this._http.post<AuthResponse>(`${this.apiUrl}/Account/change-password`, data);
 
   getUserDetail = () => {
     const token = this.getToken();

@@ -143,3 +143,4 @@ D:\Proyectos.NET\AuthAPI_901\AuthAPI_901\obj\Debug\net8.0\AuthAPI_901.pdb
 D:\Proyectos.NET\AuthAPI_901\AuthAPI_901\obj\Debug\net8.0\AuthAPI_901.genruntimeconfig.cache
 D:\Proyectos.NET\AuthAPI_901\AuthAPI_901\obj\Debug\net8.0\ref\AuthAPI_901.dll
 D:\Proyectos.NET\AuthAPI_901\AuthAPI_901\obj\Debug\net8.0\AuthAPI_901.sourcelink.json
+D:\Proyectos.NET\AuthAPI_901\AuthAPI_901\bin\Debug\net8.0\RestSharp.dll
