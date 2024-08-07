@@ -48,7 +48,7 @@ export class AuthService {
     return this._http.get<UserDetail>(`${this.apiUrl}/Account/detail`);
   }
 
-  getUserDetail=()=>{
+  getUserDetail = () => {
     const token = this.getToken();
     if (!token) return null;
     const decodedToken: any = jwtDecode(token);
@@ -57,7 +57,7 @@ export class AuthService {
       fullName: decodedToken.name,
       email: decodedToken.email,
       roles: decodedToken.role || [],
-    }
+    };
     return userDetail;
   }
 
@@ -68,10 +68,10 @@ export class AuthService {
     return !this.isTokenExpired();
   }
 
-  private isTokenExpired(){
+  private isTokenExpired() {
     const token = this.getToken();
-    if(!token) return true;
-    const decoded = jwtDecode(token)
+    if (!token) return true;
+    const decoded = jwtDecode(token);
     const isTokenExpired = Date.now() > decoded['exp']! * 1000;
     if (isTokenExpired) this.logout();
     return isTokenExpired;
@@ -85,12 +85,12 @@ export class AuthService {
 
   getAll = (): Observable<UserDetail[]> =>
     this._http.get<UserDetail[]>(`${this.apiUrl}/Account`)
-  
-  getRoles = ():string[] | null=>{
-    const token = this.getToken();
-    if(!token) return null;
 
-    const decodedToken:any = jwtDecode(token);
-    return decodedToken.role||null
+  getRoles = (): string[] | null => {
+    const token = this.getToken();
+    if (!token) return null;
+
+    const decodedToken: any = jwtDecode(token);
+    return decodedToken.role || null;
   }
 }

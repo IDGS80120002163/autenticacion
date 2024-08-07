@@ -7,9 +7,9 @@ import { AsyncPipe } from '@angular/common';
   standalone: true,
   imports: [AsyncPipe],
   templateUrl: './users.component.html',
-  styleUrl: './users.component.css'
+  styleUrls: ['./users.component.css']
 })
 export class UsersComponent {
   authService = inject(AuthService);
-  user$=this.authService.getAll();
+  user$ = this.authService.getAll();
 }
